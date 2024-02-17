@@ -1,0 +1,159 @@
+#dwld{
+    display: block;
+}
+  #gradient2{
+    background: #808080;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #3fada8, #808080);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #3fada8, #808080); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+body {
+  font-family: Arial, sans-serif;
+  transition: background-color 0.5s, color 0.5s;
+  background-color: var(--background-color);
+  color:var(--color);
+}
+
+.dark-mode {
+  --background-color: #100f0f;
+  --color: #fff;
+}
+:root{
+  --background-color:white;
+  --color:black;
+}
+#certificates table tr td,#projects table tr td{
+  background-color: var(--background-color);
+  color: var(--color);
+}
+.img-fluid{
+  border-radius: 50%;
+  border: 3px solid black;
+}
+@keyframes zoomInOut {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+#dwld button {
+  animation: zoomInOut 2s infinite; /* Adjust the animation duration as needed */
+}
+#home h3{
+  font-size:40px;
+  animation: fadeIn 2s ease forwards, scale 2s ease-in-out ;  
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.fa-solid.fa-envelope,.fa-brands.fa-linkedin{
+  font-size: 30px;
+  padding: 4px;
+  border-radius: 5px;
+  color:var(--text-color);
+}
+.fa-brands.fa-github{
+  font-size: 30px;
+  padding: 4px;
+  border-radius: 50%;
+  color:var(--text-color);
+  border:0px;
+}
+.fa-solid.fa-envelope:hover {
+  transform: scale(1.2);
+  background-color: rgba(0,255,255,0.91);
+  -webkit-box-shadow:0px 0px 6px 4px rgba(0,255,255,0.91);
+  -moz-box-shadow: 0px 0px 6px 4px rgba(0,255,255,0.91);
+  box-shadow: 0px 0px 6px 4px rgba(0,255,255,0.91);
+}
+.fa-brands.fa-linkedin:hover{
+  transform: scale(1.2);
+  background-color: rgba(10,102,194,0.91);    
+  -webkit-box-shadow:0px 0px 4px 4px rgba(10,105,194,0.91);
+  -moz-box-shadow: 0px 0px 4px 4px rgba(10,105,194,0.91);
+  box-shadow: 0px 0px 4px 4px rgba(10,105,194,0.91);
+}
+.fa-brands.fa-github:hover{
+  transform: scale(1.2);
+  background-color: rgba(17, 12, 12, 0.91);
+  -webkit-box-shadow:0px 0px 4px 4px rgba(0,0,0,0.91);
+  -moz-box-shadow: 0px 0px 4px 4px rgba(0,0,0,0.91);
+  box-shadow: 0px 0px 4px 4   px rgba(0,0,0,0.91);
+}
+.navbar-brand{
+  padding-right: 30px;
+  padding-left: 30px;
+}
+.navbar-brand:hover{
+  -webkit-box-shadow:0px 0px 6px 4px rgba(0,255,255,0.91);
+  -moz-box-shadow: 0px 0px 6px 4px rgba(0,255,255,0.91);
+  box-shadow: 0px 0px 8px 4px #00ffffe8;
+  border-bottom:3px solid white;
+  color: white;
+  transform: scale(1.1);
+}
+.nav-link:hover{
+  -webkit-box-shadow:0px 0px 6px 4px rgba(0,255,255,0.91);
+  -moz-box-shadow: 0px 0px 6px 4px rgba(0,255,255,0.91);
+  box-shadow: 0px 0px 6px 4px rgba(0,255,255,0.91);
+  color:white;
+  border-bottom:3px solid white;
+  transform: scale(1.1);
+}
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+#certificates h3,#skills h3,#projects h3,#about h3{
+  animation: slideInFromLeft 1.5s ease-out; /* Adjust the animation duration and timing function as needed */
+}
+.btn.btn-primary{
+  color:var(--text-color);
+}
+.btn.btn-primary:hover{
+  background-color: rgb(0, 162, 255);
+  color:var(--background-color);
+  transform: scale(1.07);
+  background-color: rgba(0,255,255,0.91);
+  -webkit-box-shadow:0px 0px 6px 4px rgba(0,255,255,0.91);
+  -moz-box-shadow: 0px 0px 6px 4px rgba(0,255,255,0.91);
+  box-shadow: 0px 0px 6px 4px rgba(0,255,255,0.91);
+}
+#dev{
+  font-size:60px;
+  font-weight:200;
+  color: rgb(235, 0, 0);
+}
+.progress-bar.move {
+  animation: moveRight 2s ease-in-out forwards;
+}
+@keyframes moveRight {
+  from {
+      margin-left: -100%;
+      width: 100%;
+  }
+  to {
+      margin-left: 0%;
+  }
+}
+#Html,#CSS,#JavaScript,#Java,#SQL,#C,#Python{
+  height: 10px;
+}
